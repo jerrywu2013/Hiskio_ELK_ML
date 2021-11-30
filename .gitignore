@@ -1,0 +1,11 @@
+__pycache__
+.devcontainer/devcontainer.json
+.devcontainer/docker-compose.yml
+.devcontainer/images
+.DS_Store
+.ipynb_checkpoints
+.venv
+*.pyc
+*.zip
+build
+recommender

@@ -1,0 +1,5 @@
+bentoml
+pandas
+pydantic
+tensorflow-recommenders
+tensorflow~=2.7.0
