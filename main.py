@@ -33,7 +33,7 @@ class NewsService(BentoService):
         user_id = j_in.get("user_id")
 
         _, titles = self.index(np.array([str(user_id)]))
-        return titles[0, : self.topk_recommend]
+        return [i.numpy().decode("utf-8") for i in titles[0, :self.topk_recommend]]
 
     @api(input=JsonInput(), btach=False)
     def record(self, j_in):
